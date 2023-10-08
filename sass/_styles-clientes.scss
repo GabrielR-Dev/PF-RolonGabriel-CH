@@ -1,0 +1,30 @@
+    .main__clientes {
+        @include flex-center;
+        flex-direction: column;
+
+        .main__clientes__cliente {
+            @include tarjetas;
+            @include flex-center;
+            flex-direction: column;
+            margin: 2rem;
+
+            img {
+                border-radius: 40%;
+                border: 3px solid rgba(0, 0, 0, 0.2);
+                width: 200px;
+                height: 160px;
+            }
+
+        }
+    }
+
+
+    @media (min-width: $pantalla-media-chica) {
+
+            .main__clientes__cliente {
+                flex-direction: row;
+            }
+        
+
+
+    }

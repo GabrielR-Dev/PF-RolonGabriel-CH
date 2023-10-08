@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Bree Serif', serif;
+}
+p{
+    font-family: 'Bree Serif', serif;
+}
+hr{
+    width: 70%;
+    margin: 50px auto;
+}
+
+/*HEADER GENERAL -------------------------------------------------------*/
+.header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+
+}
+
+.header .navegacion{
+    list-style: none;
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    background-color: rgba(53, 53, 53, 0.4);
+    position: fixed;
+    z-index: 10;
+
+}
+
+.header .navegacion .items{
+
+display: block;
+width:70%;
+height: 2rem;
+margin: 0 auto;
+margin-top: 1rem;
+
+}
+
+
+.header .navegacion .items li{
+    display: inline;
+    margin: 5%;
+    background-color: chocolate;
+    padding: 8px;
+
+}
+
+
+.header .navegacion .items li a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.header .img{
+    width: 100%;
+    height: 100%;
+}
+.header .img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*---------------------------------------- Main inicio -----------------------------------------------*/
+.main{
+    width: 100%;
+    min-height: 50vh;
+}
+.main h1{
+    margin-left: 20%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+.main p{
+
+    width: 50%;
+    height: 30%;
+    margin: 0 auto;
+}
+.main .img-inicio{
+    padding: 30px;
+}
+.main .img-inicio img{
+    width: 700px;
+    height: 400px;
+    margin: 10px;
+}
+
+
+
+/*---------------------------------------- Main Sobre Nosotros -----------------------------------------------*/
+
+.header-sn{
+    height: 5rem;
+
+}
+
+.main{
+    width: 100%;
+    min-height: 50vh;
+}
+.main h1{
+    margin-left: 20%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.main .video h3{
+    margin: 20px;
+}
+
+.main .video iframe{
+    display: block;
+    width: 60%;
+    height: 60vh;
+    margin: 20px auto;
+}
+
+/*---------------------------------------- Main Imagenes -----------------------------------------------*/
+
+.header-fotografias{
+    height: 5rem;
+}
+
+.main .fotografias{
+    width: 90%;
+    margin: auto;
+
+}
+.main .fotografias .foto{
+    display: inline;
+    padding: 20px;
+}
+.main .fotografias .foto img{
+    width: 400px;
+    height: 250px;
+}
+
+/*---------------------------------------- Main Cliente -----------------------------------------------*/ 
+
+.header-clientes{
+    height: 5rem;
+
+}
+
+.main .clientes .cliente img{
+    width: 200px;
+    height: 160px;
+    padding: 20px;
+}
+
+/*---------------------------------------- Main Empleados -----------------------------------------------*/
+
+.header-empleados{
+    height: 5rem;
+
+}
+.main .empleados{
+    margin: 40px;
+
+}
+.main .empleados .empleado{
+    position: relative;
+}
+
+.main .empleados .empleado img{
+    width: 500px;
+    height: 250px;
+}
+.main  .empleados .empleado .redes-sociales{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.main .empleados .empleado .redes-sociales img{
+    width: 3rem;
+    height: 3rem;
+}
+
+/*  FOOTER GENERAL -------------------------------------------*/
+.footer  {
+    width: 100%;
+    height: 70vh;
+    background-color: rgbA(210, 105, 30,0.8);
+
+    position: relative;
+
+}
+.footer p{
+    display: block;
+    font-size: 20px;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: large;
+}
+.footer .formulario{
+
+    display: inline;
+    width: 40%;
+}
+.footer  .formulario label{
+    display: inline;
+    width: 140px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.footer  .formulario input{
+    display: inline;
+    margin-bottom: 10px;
+}
+.footer  .formulario button{
+    margin-left: 50px;
+}
+
+.footer .ubicacion{
+    display: inline;
+    position: absolute;
+    top:20%;
+    left: 40%;
+}
+
+.footer  .redes-sociales{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.footer  .redes-sociales img{
+    width: 2rem;
+    height: 2rem;
+}

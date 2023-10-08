@@ -1,0 +1,87 @@
+.main__filtro__inputs {
+    @include flex-center;
+    width: 50%;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 5px;
+
+    label {
+        @extend .boton-general;
+
+    }
+}
+
+.main__filtro {
+    .main__filtro__galeria {
+        .main__galeria__img {
+
+            img {
+                width: 100%;
+                height: 300px;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+
+            }
+
+        }
+    }
+}
+
+
+
+input[type="radio"] {
+    display: none;
+}
+
+.bodas,
+.quince,
+.cumplemes,
+.fiestas,
+.bebes,
+.paisajes {
+    display: none;
+}
+
+#todas:checked~.main__filtro__galeria .bodas,
+#todas:checked~.main__filtro__galeria .quince,
+#todas:checked~.main__filtro__galeria .cumplemes,
+#todas:checked~.main__filtro__galeria .fiestas,
+#todas:checked~.main__filtro__galeria .paisajes {
+    display: flex;
+}
+
+#bodas:checked~.main__filtro__galeria .bodas,
+#quince:checked~.main__filtro__galeria .quince,
+#cumplemes:checked~.main__filtro__galeria .cumplemes,
+#fiestas:checked~.main__filtro__galeria .fiestas,
+#paisajes:checked~.main__filtro__galeria .paisajes {
+    display: flex;
+}
+
+#bodas:checked~.main__filtro__inputs label[for="bodas"],
+#quince:checked~.main__filtro__inputs label[for="quince"],
+#cumplemes:checked~.main__filtro__inputs label[for="cumplemes"],
+#fiestas:checked~.main__filtro__inputs label[for="fiestas"],
+#paisajes:checked~.main__filtro__inputs label[for="paisajes"],
+#todas:checked~.main__filtro__inputs label[for="todas"] {
+    background-color: $backgound-boton-claro;
+    ;
+}
+
+@media(min-width: $pantalla-chica) {
+    .main__filtro__inputs {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+
+    }
+}
+@media(min-width: $pantalla-media) {
+    .main__inputs {
+        width: 50%;
+    }
+
+}

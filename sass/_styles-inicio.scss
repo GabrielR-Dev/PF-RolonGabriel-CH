@@ -1,0 +1,46 @@
+.main {
+
+    .cards {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        justify-items: center;
+        .card {
+            @include tarjetas;
+            
+            a{
+                @extend .boton-general;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+
+/* Media Query img */
+@media(min-width : $pantalla-media) {
+    .main {
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+    }
+}
+
+@media(min-width : $pantalla-grande) {
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        justify-content: center;
+
+
+    }
+
+}

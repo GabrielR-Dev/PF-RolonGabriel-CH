@@ -1,0 +1,148 @@
+.footer {
+    @include flex-center;
+    width: 100%;
+    background-color: $color-principal;
+    position: relative;
+    padding-top: 20px;
+    flex-direction: column;
+
+
+    * {
+        color: $color-principal-letras-oscuro;
+    }
+
+    .footer__title {
+        p {
+
+            font-size: 20px;
+            width: 80%;
+            margin: 0 auto;
+            padding-bottom: 40px;
+            font-size: large;
+        }
+    }
+
+    .footer__contenido {
+        .footer__contenido__form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            label {
+                width: 15rem;
+                margin: 10px;
+            }
+
+            textarea {
+                width: 15rem;
+                resize: none;
+            }
+
+            button {
+                @extend .boton-general;
+            }
+        }
+
+        .footer__contenido__ubicacion {
+            padding: 1rem;
+            border-radius: 2px solid black;
+
+            iframe {
+                margin-top: 2rem;
+                width: 250px;
+                height: 250px;
+
+            }
+
+        }
+    }
+
+    .footer__other {
+        .footer__other__copyright {
+            margin: 30px 0 0;
+            color: black;
+
+            span {
+                a {
+                    color: black;
+                }
+            }
+        }
+
+        .footer__redes-sociales {
+            @include iconos-redes;
+
+            img {
+
+
+                &:hover {
+                    transform: scale(1.2);
+
+                }
+            }
+
+        }
+    }
+}
+
+
+/* Media Queries*/
+
+@media(min-width: $pantalla-chica) {
+    .footer {
+        section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+
+    .footer {
+        .footer__contenido {
+            .footer__contenido__ubicacion {
+                iframe {
+                    width: 300px;
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width: 800px) {
+    .footer {
+        .footer__contenido {
+            .footer__contenido__ubicacion {
+                iframe {
+                    width: 400px;
+                    height: 450px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1100px) {
+    .footer {
+        .footer__contenido {
+            .footer__contenido__ubicacion {
+                iframe {
+                    width: 600px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: $pantalla-grande) {
+    .footer {
+        .footer__contenido {
+            .footer__contenido__ubicacion {
+                iframe {
+                    width: 750px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+    .navbar {
+        list-style: none;
+        width: 100%;
+        height: 5rem;
+        background-color: $color-principal;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+
+        .container-fluid {
+            background-color:  $color-principal;
+
+            .collapse{
+
+                .navbar-nav{
+
+                    .nav-item{
+
+                        a{
+                            color: $color-principal-letras-oscuro;
+                            &:hover{
+                                color: $color-principal-letras-claro;
+                                background-color: $backgound-boton-claro;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+}

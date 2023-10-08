@@ -1,0 +1,53 @@
+.main {
+
+
+
+    .descipcion-sobre-nosotros{
+        @include flex-center;
+        flex-direction: column;
+        .sobre-nosotros-inf{
+            @include tarjetas;
+            flex-direction: column;
+            transition: 0.5s;
+            &:hover {
+                transform: scale(1.2);
+
+            }
+        }
+    }
+
+    .video {
+        h3 {
+            margin: 20px;
+        }
+
+        iframe {
+            width: 80%;
+            height: 11rem;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+/*Media Queries Carousel*/
+@media(min-width: $pantalla-chica) {
+
+    .main {
+        .video {
+            iframe {
+                height: 20rem;
+            }
+        }
+    }
+}
+
+@media(min-width: $pantalla-grande) {
+    .main {
+        .video {
+            iframe {
+                height: 60vh;
+            }
+        }
+    }
+}
