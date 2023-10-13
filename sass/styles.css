@@ -238,8 +238,13 @@ body {
 }
 
 @media (min-width: 800px) {
-  .main__clientes__cliente {
+  .main__clientes .main__clientes__cliente {
     flex-direction: row;
+    gap: 4rem;
+    margin-bottom: 10rem;
+  }
+  .main__clientes .main__clientes__cliente:nth-child(2), .main__clientes .main__clientes__cliente:nth-child(4) {
+    flex-direction: row-reverse;
   }
 }
 .main__empleados {
@@ -272,7 +277,9 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  bottom: 2px;
+  position: relative;
+  bottom: 0;
+  left: 0;
 }
 .main__empleados figure figcaption .iconos-redes-empleado img {
   width: 2rem;
@@ -285,14 +292,18 @@ body {
 }
 
 @media (min-width: 667px) {
+  .main .main__empleados .main__empleados__empleado {
+    /*.redes-sociales {
+        img {
+            width: 2rem;
+            height: 2rem;
+        }
+    }*/
+  }
   .main .main__empleados .main__empleados__empleado img {
     width: 70%;
     height: 350px;
     border-radius: 20px;
-  }
-  .main .main__empleados .main__empleados__empleado .redes-sociales img {
-    width: 2rem;
-    height: 2rem;
   }
 }
 @media (min-width: 900px) {
@@ -310,26 +321,9 @@ body {
     position: relative;
     width: 250px;
   }
-  .main .main__empleados figure figcaption h4,
-  .main .main__empleados figure figcaption p {
-    color: white;
-    padding: 20px;
-  }
   .main .main__empleados figure figcaption .iconos-redes-empleado {
-    z-index: 200;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    bottom: 2px;
-  }
-  .main .main__empleados figure figcaption .iconos-redes-empleado img {
-    width: 2rem;
-    height: 2rem;
-    transition: 0.3s;
-    cursor: pointer;
-  }
-  .main .main__empleados figure figcaption .iconos-redes-empleado img:hover {
-    transform: scale(1.2);
+    /*@include iconos-redes;
+    bottom: 2px;*/
   }
 }
 .footer {

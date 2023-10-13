@@ -30,7 +30,9 @@
 
             .iconos-redes-empleado {
                 @include iconos-redes;
-                bottom: 2px;
+                position: relative;
+                bottom: 0;
+                left: 0;
             }
         }
     }
@@ -48,12 +50,12 @@
                     border-radius: 20px;
                 }
 
-                .redes-sociales {
+                /*.redes-sociales {
                     img {
                         width: 2rem;
                         height: 2rem;
                     }
-                }
+                }*/
             }
         }
     }
@@ -79,15 +81,10 @@
 
                     width: 250px;
 
-                    h4,
-                    p {
-                        color: white;
-                        padding: 20px;
-                    }
 
                     .iconos-redes-empleado {
-                        @include iconos-redes;
-                        bottom: 2px;
+                        /*@include iconos-redes;
+                        bottom: 2px;*/
                     }
                 }
             }

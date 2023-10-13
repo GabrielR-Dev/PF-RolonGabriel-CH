@@ -23,10 +23,19 @@
 
 
     @media (min-width: $pantalla-media-chica) {
+        .main__clientes{
 
             .main__clientes__cliente {
                 flex-direction: row;
+                gap: 4rem;
+                margin-bottom: 10rem;
+
+                &:nth-child(2),&:nth-child(4){
+                    flex-direction: row-reverse;
+                }
             }
+        }
+
         
 
 
