@@ -3,16 +3,19 @@
         flex-direction: column;
 
         .main__clientes__cliente {
-            @include tarjetas;
             @include flex-center;
             flex-direction: column;
-            margin: 2rem;
+            text-align: center;
 
             img {
                 border-radius: 40%;
                 border: 3px solid rgba(0, 0, 0, 0.2);
                 width: 200px;
                 height: 160px;
+                margin-bottom: 2rem;
+            }
+            p{
+                margin-bottom: 4rem;
             }
 
         }

@@ -14,6 +14,8 @@
   <!--Booststrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <!-- Iconos Booststrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +32,7 @@
     content="Photo Compani,sobre nosotros, imágenes, visual, eventos, retrato, belleza, inspiración">
 </head>
 
-<body>
+<body id="body" class="theme">
   <header class="header">
 
 
@@ -68,6 +70,9 @@
     </nav>
   </header>
 
+  <section id="mode" class="mode">
+    <i class="bi bi-moon"></i>
+  </section>
 
   <main class="main container-fluid">
 
@@ -119,15 +124,16 @@
       </div>
 
 
-      <p>
-        Gracias por confiar en nosotros para capturar tus momentos especiales. Estamos ansiosos por ser parte de tu
-        historia y crear recuerdos que durarán toda la vida.
-        ¡<a href="#form">Contáctanos</a> hoy y permítenos ser tu fotógrafo de confianza!
-      </p>
     </div>
 
-
     <hr>
+    <p>
+      Gracias por confiar en nosotros para capturar tus momentos especiales. Estamos ansiosos por ser parte de tu
+      historia y crear recuerdos que durarán toda la vida.
+      ¡<a href="#form">Contáctanos</a> hoy y permítenos ser tu fotógrafo de confianza!
+    </p>
+
+
     <div class="video">
       <h3 data-aos="zoom-in">Consejos para fotos de eventos</h3>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/x2GZ85ekj0A" title="YouTube video player"
@@ -197,6 +203,8 @@
   <!-- AOS CSS Js -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
+  <!-- Script para el darck mode -->
+  <script src="/script/app.js"></script>
 </body>
 
 </html>

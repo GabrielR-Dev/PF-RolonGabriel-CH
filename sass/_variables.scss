@@ -1,29 +1,44 @@
 $pantalla-chica: 667px;
-$pantalla-media-chica:800px;
+$pantalla-media-chica: 800px;
 $pantalla-media: 900px;
 $pantalla-media-grande: 1100px;
 $pantalla-grande: 1200px;
 
+$color-principal-claro: #ff5500;
+$color-secundario-claro: #fffffe;
+$color-terciario-claro: #ffb703;
+$color-cuaternario-claro: #8ecae6;
 
-$color-principal-claro: #232946;
-$color-secundario-claro: #b8c1ec;
-$color-terciario-claro: #fffffe;
-$color-cuaternario-claro:#eebbc3;
+$color-boton-background-claro: #ffb703;
+$color-principal-letras-claro: #fffffe;
+
+// Colores oscuros
 
 $color-principal-oscuro: #16161a;
-$color-secundario-oscuro: #72757e;
+$color-secundario-oscuro: #023047;
 $color-terciario-oscuro: #7f5af0;
-$color-cuaternario-oscuro:#010101;
+$color-cuaternario-oscuro: #010101;
 
-$backgound-boton-claro:#ff5500;
-$backgound-boton-oscuro: #7f5af0;
-
-
-$color-principal-letras-claro:#232946;
-$color-principal-letras-oscuro: #fffffe;
+$color-boton-background-oscuro: #ffb703;
+$color-principal-letras-oscuro: #023047;
 
 
-$color-principal: $color-principal-claro;
-$color-secundario: $color-secundario-claro;
-$color-terciario: $color-terciario-claro;
-$color-cuaternario:$color-cuaternario-claro;
+
+.theme {
+    --color-principal: #{$color-principal-claro};
+    --color-secundario: #{$color-secundario-claro};
+    --color-terciario: #{$color-terciario-claro};
+    --color-cuaternario:#{$color-cuaternario-claro};
+    --color-boton-background:#{$color-boton-background-claro};
+    --color-principal-letras:#{$color-principal-letras-oscuro};
+
+    // Tema oscuro
+    &--dark {
+        --color-principal: #{$color-principal-oscuro};
+        --color-secundario: #{$color-secundario-oscuro};
+        --color-terciario: #{$color-terciario-oscuro};
+        --color-cuaternario:#{$color-cuaternario-oscuro};
+        --color-boton-background:#{$color-boton-background-oscuro};
+        --color-principal-letras:#{$color-principal-letras-claro};
+    }
+}

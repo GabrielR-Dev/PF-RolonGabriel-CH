@@ -10,7 +10,8 @@ a{
 }
 p,h1,h2,h3,h4{
     font-family: 'Bree Serif', serif;
-    color: $color-principal-letras-claro;
+    color: var(--color-principal-letras);
+
 }
 
 
@@ -19,7 +20,7 @@ hr {
     margin: 50px auto!important;
 }
 body{
-    background:$color-secundario;
+    background:var(--color-secundario);
 }
 
 .header {
@@ -28,38 +29,77 @@ body{
 
 .boton-general{
     margin: 5px;
-    background-color: $backgound-boton-oscuro;
+    background-color: var(--color-boton-background);
     padding: 5px;
     border-radius: 10px;
     color: #fff;
     cursor: pointer;
 
 
+
     &:hover {
-        background-color: $backgound-boton-claro;
+        background-color: var(--color-boton-background);
         transition: .3s;
     }
 }
 
 .main{
+
     @include flex-center;
     flex-direction: column;
     width: 80%;
-    margin-top: 3rem;
+
+    margin-top: 6rem;
     .descripcion-vista {
-        @include flex-center;
         flex-direction: column;
+        height: 90vh;
         
         h1{
-            
+            text-align: center;
+            padding-bottom: 25%;
         }
 
         p {
-            margin: auto;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
+            text-align: center;
         }
     }
+
 }
+
+.mode{
+    @include flex-center;
+    position: fixed;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    bottom: 1.5rem;
+    left: 2rem;
+    cursor: pointer;
+    z-index: 300;
+    transition: .3s;
+    background-color: var(--color-boton-background);
+
+    
+    
+    &:hover{
+        transform: scale(1.2);
+    }
+    &--dark{
+        @include flex-center;
+        position: fixed;
+        width: 2.2rem;
+        height: 2.2rem;
+        border-radius: 50%;
+        bottom: 1.5rem;
+        left: 2rem;
+        cursor: pointer;
+        z-index: 300;
+        text-align: center;
+        transition: .3s;
+        background-color: var(--color-boton-background);
+    }
+}
+
+
 
 

@@ -1,14 +1,14 @@
 .footer {
     @include flex-center;
     width: 100%;
-    background-color: $color-principal;
+    background-color: var(--color-principal);
     position: relative;
     padding-top: 20px;
     flex-direction: column;
 
 
     * {
-        color: $color-principal-letras-oscuro;
+        color: var(--color-principal-letras);
     }
 
     .footer__title {

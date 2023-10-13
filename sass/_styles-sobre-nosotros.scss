@@ -30,12 +30,17 @@
 }
 
 
-/*Media Queries Carousel*/
 @media(min-width: $pantalla-chica) {
 
+
     .main {
+            
         .video {
+
+            width: 100%;
+            align-items: center;
             iframe {
+
                 height: 20rem;
             }
         }
@@ -44,8 +49,19 @@
 
 @media(min-width: $pantalla-grande) {
     .main {
+        .descipcion-sobre-nosotros{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            align-content: center;
+
+
+        }
         .video {
+            h3{
+                text-align: center;
+            }
             iframe {
+                @include flex-center;
                 height: 60vh;
             }
         }

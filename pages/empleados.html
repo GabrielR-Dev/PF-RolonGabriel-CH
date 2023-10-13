@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Empleados</title>
   <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
-  
+
   <!-- AOS CSS Animaciones-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!--Booststrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <!-- Iconos Booststrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,12 +24,14 @@
   <!-- Mi CSS -->
   <link rel="stylesheet" href="../sass/styles.css">
 
-    <!-- Etiquetas SEO -->
-    <meta name="description" content="Conoce a nuestros expertos en fotografía. Encuentra al fotógrafo perfecto para tu proyecto. Explora las habilidades, estilos y experiencias de nuestro talentoso equipo y elige al profesional que mejor se adapte a tus necesidades.">
-    <meta name="keywords" content="Photo Compani, fotografías, imágenes, expertos en fotografia, eventos, retrato, belleza, inspiración, fotografos, profecionales">
+  <!-- Etiquetas SEO -->
+  <meta name="description"
+    content="Conoce a nuestros expertos en fotografía. Encuentra al fotógrafo perfecto para tu proyecto. Explora las habilidades, estilos y experiencias de nuestro talentoso equipo y elige al profesional que mejor se adapte a tus necesidades.">
+  <meta name="keywords"
+    content="Photo Compani, fotografías, imágenes, expertos en fotografia, eventos, retrato, belleza, inspiración, fotografos, profecionales">
 </head>
 
-<body>
+<body id="body" class="theme">
   <header class="header">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
@@ -63,66 +67,78 @@
     </nav>
   </header>
 
+  <section id="mode" class="mode">
+    <i class="bi bi-moon"></i>
+  </section>
 
   <main class="main container-fluid">
-    
+
     <div class="descripcion-vista">
       <h1 data-aos="zoom-out-down">Empleados</h1>
-      <p>Conoce a nuestro talentoso equipo de fotógrafos, apasionados por capturar momentos especiales y crear recuerdos inolvidables para nuestros clientes. Cada uno de ellos aporta su creatividad y experiencia para hacer que tus eventos sean inmortalizados de manera única y auténtica.</p>
+      <p data-aos="zoom-out-down">Conoce a nuestro talentoso equipo de fotógrafos, apasionados por capturar momentos
+        especiales y crear recuerdos inolvidables para nuestros clientes. Cada uno de ellos aporta su creatividad y
+        experiencia para hacer que tus eventos sean inmortalizados de manera única y auténtica.</p>
 
     </div>
 
+    <div class="main__empleados">
 
-    <div class="main__empleados" >
-      <div class="main__empleados__empleado">
-        <img src="../img/empleados/empleado-1.jpeg" alt="Gustavo Gomez">
-        <h4>Julieta Ramirez</h4>
-        <p><b>Descripcion:</b><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis quisquam error
-          quidem ab,
-          perspiciatis accusantium magnam ullam veniam earum magni voluptatum quaerat aspernatur quos id quae
-          illum deserunt doloremque fuga!</p>
-        <div class="redes-sociales">
-          <img src="../img/contacto/whatsapp-logo.webp" alt="img-whatsapp">
-        </div>
-      </div>
-      <hr>
-      <div class="main__empleados__empleado" data-aos="fade-up"
-      data-aos-anchor-placement="top-bottom">
-        <img src="../img/empleados/empleado-2.jpeg" alt="Gustavo Gomez">
-        <h4>Gustavo Gomez</h4>
-        <p><b>Descripcion:</b><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex numquam dicta
-          molestias consequatur ratione, aspernatur inventore odit, minus mollitia porro iusto officia dolore
-          maiores libero deleniti? Iusto neque asperiores optio ipsam repellat repudiandae, autem quas. Quas
-          quibusdam maxime facilis saepe corporis! Delectus dolore ad, dicta exercitationem assumenda voluptates!
-          Quisquam est qui odit officiis at expedita quos facere ad officia cupiditate.</p>
-        <div class="redes-sociales">
-          <img src="../img/contacto/whatsapp-logo.webp" alt="img-whatsapp">
-        </div>
-      </div>
-      <hr>
-      <div class="main__empleados__empleado" data-aos="fade-up"
-      data-aos-anchor-placement="top-bottom">
-        <img src="../img/empleados/empleado-3.jpg" alt="Gustavo Gomez">
-        <h4>Lucia Suarez</h4>
-        <p><b>Descripcion:</b><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor optio
-          dolores vitae ea id nisi delectus eligendi officiis quia, doloremque saepe ab. Soluta, nostrum
-          libero maiores quo saepe non vero!</p>
-        <div class="redes-sociales">
-          <img src="../img/contacto/whatsapp-logo.webp" alt="img-whatsapp">
-        </div>
-      </div>
-
+      <figure data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <img src="/img/empleados/empleado-1.jpeg" alt="" srcset="">
+        <figcaption>
+          <h4>Laura Villanueva</h4>
+          <p>Laura tiene una pasión innata por la naturaleza y la fotografía de paisajes. Sus imágenes capturan la
+            belleza de la tierra en su máxima expresión, desde majestuosas montañas hasta tranquilos atardeceres en la
+            playa. Laura transforma la naturaleza en arte visual con su creatividad y experiencia.</p>
+          <div class="iconos-redes-empleado">
+            <img src="/img/contacto/Facebook.webp" alt="">
+            <img src="/img/contacto/Instagram_logo.webp" alt="">
+            <img src="/img/contacto/whatsapp-logo.webp" alt="">
+          </div>
+        </figcaption>
+      </figure>
+      <figure data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <img src="/img/empleados/empleado-2.jpeg" alt="" srcset="">
+        <figcaption>
+          <h4>Francisco Montoya</h4>
+          <p>Francisco es un apasionado de la fotografía de bodas y retratos. Su habilidad para capturar la emoción y la
+            autenticidad en los momentos más importantes de la vida es inigualable. Con años de experiencia, Frán ha
+            inmortalizado innumerables historias de amor con su enfoque cálido y creativo.</p>
+          <div class="iconos-redes-empleado">
+            <img src="/img/contacto/Facebook.webp" alt="">
+            <img src="/img/contacto/Instagram_logo.webp" alt="">
+            <img src="/img/contacto/whatsapp-logo.webp" alt="">
+          </div>
+        </figcaption>
+      </figure>
+      <figure data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <img src="/img/empleados/empleado-3.jpg" alt="" srcset="">
+        <figcaption>
+          <h4>Morena Rojas</h4>
+          <p>Morena se especializa en la cobertura de eventos corporativos y conferencias. Su atención meticulosa a los
+            detalles y su habilidad para capturar momentos clave hacen que las imágenes de su trabajo destaquen en el
+            mundo empresarial. Con 5 años de experiencia,Morena es un recurso confiable para cualquier evento
+            corporativo.</p>
+          <div class="iconos-redes-empleado">
+            <img src="/img/contacto/Facebook.webp" alt="">
+            <img src="/img/contacto/Instagram_logo.webp" alt="">
+            <img src="/img/contacto/whatsapp-logo.webp" alt="">
+          </div>
+        </figcaption>
+      </figure>
 
     </div>
   </main>>
+
 
   <footer class="footer ">
 
     <section class="footer__title">
       <br>
       <p><b>CONTACTO:</b><br>
-        Contactate con nosotros completando el siguiente formulario. Podes enviarnos Cualquier duda o consulta,
-        Para solicitar un presupuesto recomendamos describir lo mejor posible su pedido.
+        Si estás interesado en trabajar con alguno de nuestros fotógrafos para tu próximo proyecto, evento o sesión, no
+        dudes en ponerte en contacto con nosotros. Estamos emocionados por la oportunidad de capturar momentos
+        especiales para ti.
       </p>
     </section>
 
@@ -172,9 +188,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
-      <!-- AOS CSS Js -->
+  <!-- AOS CSS Js -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
+  <!-- Script para el darck mode -->
+  <script src="/script/app.js"></script>
 </body>
 
 </html>

@@ -67,8 +67,8 @@ input[type="radio"] {
 #fiestas:checked~.main__filtro__inputs label[for="fiestas"],
 #paisajes:checked~.main__filtro__inputs label[for="paisajes"],
 #todas:checked~.main__filtro__inputs label[for="todas"] {
-    background-color: $backgound-boton-claro;
-    ;
+    background-color: $color-boton-background-claro;
+    
 }
 
 @media(min-width: $pantalla-chica) {
